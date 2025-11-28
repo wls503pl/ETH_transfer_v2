@@ -10,19 +10,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                        React Frontend                        │
+│                        React Frontend                       │
 │  ┌────────────────────────────────────────────────────────┐ │
-│  │              TransactionContext (Provider)              │ │
-│  │  - Manages wallet connection                            │ │
-│  │  - Handles transaction submission                       │ │
-│  │  - Fetches transaction history                          │ │
+│  │              TransactionContext (Provider)             │ │
+│  │  - Manages wallet connection                           │ │
+│  │  - Handles transaction submission                      │ │
+│  │  - Fetches transaction history                         │ │
 │  └────────────────────────────────────────────────────────┘ │
-│           ▲                    ▲                    ▲        │
-│           │                    │                    │        │
-│  ┌────────┴────────┐  ┌───────┴────────┐  ┌───────┴──────┐ │
-│  │  Welcome.jsx    │  │ Transactions   │  │   App.jsx    │ │
-│  │  (Form Input)   │  │  .jsx (List)   │  │   (Root)     │ │
-│  └─────────────────┘  └────────────────┘  └──────────────┘ │
+│           ▲                   ▲                   ▲         │
+│           │                   │                   │         │
+│  ┌────────┴────────┐  ┌───────┴────────┐  ┌───────┴──────┐  │
+│  │  Welcome.jsx    │  │ Transactions   │  │   App.jsx    │  │
+│  │  (Form Input)   │  │  .jsx (List)   │  │   (Root)     │  │
+│  └─────────────────┘  └────────────────┘  └──────────────┘  │
 └─────────────────────────────────────────────────────────────┘
                               │
                     ┌─────────▼──────────┐
@@ -479,7 +479,7 @@ const TransactionCard = ({
            │
            ▼
 ┌──────────────────────────────────────────────┐
-│           sendTransaction()                   │
+│           sendTransaction()                  │
 └──────────┬───────────────────────────────────┘
            │
            ├─► Step 1: eth_sendTransaction
@@ -528,7 +528,7 @@ const TransactionCard = ({
           │ useEffect(() => {}, [])
           ▼
 ┌────────────────────────┐
-│ checkIfWalletIsConnected│
+│checkIfWalletIsConnected│
 └─────────┬──────────────┘
           │ ethereum.request({method: "eth_accounts"})
           ▼
@@ -542,12 +542,12 @@ const TransactionCard = ({
 └─────────┬────────────┘
           │
           ▼
-┌───────────────────────────┐
-│ getEthereumContract()     │
-│  - Create provider        │
-│  - Get signer             │
-│  - Return contract instance│
-└─────────┬─────────────────┘
+┌─────────────────────────────┐
+│ getEthereumContract()       │
+│  - Create provider          │
+│  - Get signer               │
+│  - Return contract instance │
+└─────────┬───────────────────┘
           │
           ▼
 ┌────────────────────────────────┐
