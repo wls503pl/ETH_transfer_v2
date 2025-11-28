@@ -39,6 +39,9 @@ Once the transaction is confirmed on the blockchain, the magic happens - your tr
 
 ![Transaction Record Display](Integration/img/transaction_record.png)
 
+By simply clicking this GIF, you will be redirected to Sepolia Etherscan and find the transaction, thus verifying its authenticity.
+![Transaction on Etherscan](Integration/img/sepolia_etherscan_search.png)
+
 ## The Beauty of Blockchain Permanence
 
 Every transaction you make through this DApp is etched into blockchain history forever. The combination of functional crypto transfers with creative GIF pairings transforms routine transactions into memorable moments, all while maintaining the security, transparency, and immutability that blockchain technology promises.
